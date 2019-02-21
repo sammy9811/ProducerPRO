@@ -1,62 +1,58 @@
-#container{
-    background-color: blanchedalmond;
-    width: 2800px;
-    height: 1400px;
+#container {
+    width: 1060px;
     margin-left: auto;
     margin-right: auto;
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat (4, max-content);
-    grid-gap: 5em;
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 1em;
     
-    grid-template-areas:
-        " header menu menu blank"
-        " login post post posts"
-        "signup post post posts"
-        " footer footer footer footer ";
+    grid-template-areas: 
+        "login header menu"
+        "sign-up sign-up post"
+        "main main post";
 }
 
-#title{
+#title {
     grid-area: header;
+    background-color: beige;
 }
 
-#menu{
-    grid-area:menu;
+#menu {
+    grid-area: menu;
+    background-color:beige;
+    text-align: right;
 }
 
-#login{
-    grid-area:login;
+#login {
+    grid-area: login;
+    background-color: black;
 }
 
-#sign-up{
-    grid-area:signup;
+#sign-up {
+    grid-area: sign-up;
+    background-color: whitesmoke;
 }
 
-#post{
-    grid-area:post;
+#posts {
+    grid-area: main;
+    background-color: bisque;
 }
 
-#posts{
-    grid-area: posts;
+#post {
+    grid-area: post;
+    background-color: whitesmoke;
 }
 
-ul{
-    list-style-type: none;
-}
-
-li{
-    float: left;
-    overflow: hidden;
-    font-size: 40px;
-    margin: 0;
-    padding: 0;
+div{
+    text-align: center;
+    color: brown;
 }
 
 a{
-    text-decoration: underline;
-    font-size: 70px;
-}
-div{
     font-size: 30px;
+    color: brown;
 }
+
+
