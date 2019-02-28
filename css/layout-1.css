@@ -1,58 +1,42 @@
-#container {
-    width: 1060px;
+#container{
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, max-content);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
     grid-gap: 1em;
     
-    grid-template-areas: 
-        "login header menu"
-        "sign-up sign-up post"
-        "main main post";
+    grid-template-areas:
+        "menu menu menu menu"
+        "header header signup login"
+        "post main main main"
+        "footer footer footer footer";
 }
 
-#title {
+#title{
     grid-area: header;
-    background-color: beige;
 }
 
-#menu {
+#menu{
     grid-area: menu;
-    background-color:beige;
-    text-align: right;
 }
 
-#login {
-    grid-area: login;
-    background-color: black;
-}
-
-#sign-up {
-    grid-area: sign-up;
-    background-color: whitesmoke;
-}
-
-#posts {
+#posts{
     grid-area: main;
-    background-color: bisque;
 }
 
-#post {
+#post{
     grid-area: post;
-    background-color: whitesmoke;
 }
 
-div{
-    text-align: center;
-    color: brown;
+#login{
+    grid-area: login;
 }
 
-a{
-    font-size: 30px;
-    color: brown;
+#sign-up{
+    grid-area: signup
 }
 
 

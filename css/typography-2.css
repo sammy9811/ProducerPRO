@@ -1,0 +1,166 @@
+* { box-sizing: border-box; }
+
+body {
+	font-size: 15px;
+	line-height: 1.5;
+	background-color: whitesmoke;
+}
+
+
+#title, #login *, #sign-up *, #menu *, #post * {
+	font-family: sans-serifsans-serif;
+}
+
+#posts {
+	font-family: fantasysans-serif;
+}
+
+#title h1 {
+	margin: 0;
+	color: sandybrown;
+	text-shadow: 2px 2px 0 black;
+    font-size: 50px;
+}
+
+#login *, #sign-up * {
+	font-size: 1.2rem;
+}
+
+#menu a {
+	color: black;
+	padding: .6em;
+	font-size: 1.25em;
+	transition: background-color 200ms ease-in;
+}
+
+#menu a:hover {
+	background-color:  ghostwhite;
+}
+
+
+#write-post {
+	font-size: 1.5rem;
+	width: 100%;
+    height: auto;
+	padding: .25em;
+	resize: none;
+}
+
+#submit-post {
+	font-size: 1.5rem;
+	width: 100%;
+	color: white;
+	background-color: indianred;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+}
+
+#submit-login{
+}
+
+.post {
+	margin: 2em 0;
+}
+
+.post-text {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+    font-family: monospace
+}
+
+.post-info {
+	color: black;
+    font-family: serif;
+}
+
+.author {
+	font-weight: bold;
+    color: firebrick;
+    font-family: 'Srisakdi', cursive;
+}
+
+.date {
+	color: black;
+    font-family: serif;
+}
+
+/* viewport sizing */
+/* full website */
+#title h1{
+    font-size: 6vw;
+}
+
+.post-text{
+    font-size: 2.3vmax;
+}
+
+.post-info{
+    font-size: 1.2vmax;
+}
+
+/* Mobile */
+@media (max-width: 400px){
+    #title h1{
+        font-size: 16vw;
+    }
+    
+    .post-text{
+        font-size: 3vmax;
+    }
+    
+    #submit-login{
+        font-size: 1.5rem;
+	width: 50.5%;
+	color: white;
+	background-color: black;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+    }
+    
+    #submit-sign-up{
+        font-size: 1.5rem;
+	width: 50.5%;
+	color: white;
+	background-color: black;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+    }
+    
+}
+/* Tablet */
+@media (min-width: 401px) and (max-width: 800px){
+    #title h1{
+        font-size: 12vw;
+    }
+    
+    #write-post{
+        width: 100%
+    }
+    
+    .post-info{
+        font-size: 2vmax;
+    }
+    
+    #submit-login{
+        font-size: 1.5rem;
+	width: 50.5%;
+	color: white;
+	background-color: black;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+    }
+    
+    #submit-sign-up{
+        font-size: 1.5rem;
+	width: 50.5%;
+	color: white;
+	background-color: black;
+	border: 0;
+	outline: 0;
+	padding: 0.25em 0;
+    }
+}
