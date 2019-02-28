@@ -66,7 +66,7 @@ body {
 .post-text {
 	font-size: 2.5em;
 	margin-bottom: 0.5em;
-    font-family: monospace
+    font-family: monospace;
 }
 
 .post-info {
@@ -77,7 +77,7 @@ body {
 .author {
 	font-weight: bold;
     color: firebrick;
-    font-family: 'Srisakdi', cursive;
+  font-family: 'Srisakdi', cursive;
 }
 
 .date {

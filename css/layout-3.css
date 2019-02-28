@@ -1,61 +1,40 @@
-#container{
-    background-color: yellow;
-    max-width: 1160px;
+#container {
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
     
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat (4, max-content);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
     grid-gap: 1em;
     
     grid-template-areas:
-        " menu menu si header"
-        " signup login posts posts"
-        "post post posts posts"
-        " posts no no posts posts";
+        "menu menu menu"
+        "header sign-up login"
+        "post post post"
+        "main main main";   
 }
 
-#title{
+#title {
     grid-area: header;
 }
 
-#menu{
-    grid-area:menu;
+#menu {
+    grid-area: menu;
 }
 
-#login{
-    grid-area:login;
+#posts {
+    grid-area: main;
 }
 
-#sign-up{
-    grid-area:signup;
+#post {
+    grid-area: post;
 }
 
-#post{
-    grid-area:post;
+#login {
+    grid-area: login;
 }
 
-#posts{
-    grid-area: posts;
-}
-
-ul{
-    list-style-type:upper-latin;
-}
-
-li{
-    float:right;
-    overflow: hidden;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: overline;
-}
-
-div{
-    font-size:2px;
+#sign-up {
+    grid-area: sign-up;
 }
