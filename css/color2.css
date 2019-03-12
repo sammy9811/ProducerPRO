@@ -1,9 +1,9 @@
 /* color scheme */
 
 :root{
-    --main-color: #EF946C; /* orange */
-    --second-color: #DB5375; /* pink */
-    --third-color: #01295F; /* navy blue */ 
+    --main-color: indianred; /* orange */
+    --second-color: white; /* pink */
+    --third-color: black; /* navy blue */ 
 }
 
     #title {

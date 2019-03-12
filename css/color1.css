@@ -2,13 +2,13 @@
 
 :root{
 	--title-color:white;
-	--title-shadow:burgendy;
-    --author:white;
-    --menuback:#FF691E;
-    --menuitem:#090DFF;
-    --background:#5859B2;
-    --buttons:#48CC1C;
-    --date:blue;
+	--title-shadow:white;
+    --author:black;
+    --menuback:black;
+    --menuitem:grey;
+    --background:beige;
+    --buttons:lightblue;
+    --date:indianred;
 }
 
 #container{
@@ -16,7 +16,7 @@
 }
 
 #title{
-	color: var(--title-color);
+	color:red;
 	background-color: var(--menuback);
 	border-radius: 2em;
 	padding: 1px 10px;
